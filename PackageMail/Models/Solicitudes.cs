@@ -1,5 +1,6 @@
 ﻿namespace PackageMail.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.ComponentModel.DataAnnotations;
 
@@ -25,7 +26,10 @@
 
         [Display(Name ="Sucursal")]
         public int SucursalId { get; set; }
+
+        [JsonIgnore]
         public virtual Estados Estados { get; set; }
+        [JsonIgnore]
         public virtual Sucursales Sucursales { get; set; }
     }
 }

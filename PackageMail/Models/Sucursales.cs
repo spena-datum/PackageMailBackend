@@ -1,5 +1,6 @@
 ﻿namespace PackageMail.Models
 {
+    using Newtonsoft.Json;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
@@ -18,6 +19,7 @@
         public string Latitud { get; set; }
         [Display(Name ="Longitud")]
         public string Longitud { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Solicitudes> Solicitudes { get; set; }
     }
 }
