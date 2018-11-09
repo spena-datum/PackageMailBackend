@@ -21,7 +21,7 @@ namespace PackageMail
                 defaults: new { id = RouteParameter.Optional }
             );
 
-
+            config.Formatters.Remove(GlobalConfiguration.Configuration.Formatters.XmlFormatter);
         }
     }
 }
