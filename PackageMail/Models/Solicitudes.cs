@@ -29,6 +29,7 @@
 
         [JsonIgnore]
         public virtual Estados Estados { get; set; }
+
         [JsonIgnore]
         public virtual Sucursales Sucursales { get; set; }
 
